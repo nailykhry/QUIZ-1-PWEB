@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULIR PENDAFTARAN</title>
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="kop">
+            <div class="img">
+                <img src="img/logo.jpg" alt="Logo" style="width: 150px;">
+            </div>
+            <div class="text">
+                <h1>PEMERINTAH KABUPATEN SOLOK</h1>
+                <h1>RUMAH SAKIT UMUM DAERAH AROSUKA</h1>
+                <i>Jl. Raya Solok Padang KM. 20 Arosuka Kode Pos 27364</i><br>
+                <i>Provinsi Sumatera Barat Telp./Fax (0755) 31160</i><br>
+                <i>Email : rsudarosukakabsolok@gmail.com</i><br>
+            </div>
+        </div>
+        <hr>
+        <div class="header">
+            <h1 class = "title">FORMULIR PENDAFTARAN PASIEN BARU</h1>
+            <h3 class = "subtitle">PERHATIAN: HARAP MENGISI FORMULIR INI DENGAN LENGKAP DAN JELAS</h3>
+        </div>
+    
+        <div class="form">
+            <form name ="myForm" action="success.html" method="post">
+                <h3>I. IDENTITAS PASIEN</h3>
+                <table>
+                    <tr>
+                        <td>
+                            Nama Pasien 
+                        </td>
+                        <td>
+                            : <input type="text" id="name" name="name">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Tempat Lahir
+                        </td>
+                        <td>
+                            : <input type="text" id="birthplace" name="birthplace">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Tanggal Lahir
+                        </td>
+                        <td>
+                            : <input type="date" id="birthdate" name="birthdate">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Jenis Kelamin
+                        </td>
+                        <td>
+                            : <select name="gender" id="gender">
+                                <option value="laki-laki">Laki - laki</option>
+                                <option value="perempuan">Perempuan</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Provinsi
+                        </td>
+                        <td>
+                            : <input type="text" id="provinsi" name="provinsi">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Kecamatan
+                        </td>
+                        <td>
+                            : <input type="text" id="kecamatan" name="kecamatan">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Kelurahan/Desa
+                        </td>
+                        <td>
+                            : <input type="text" id="kelurahan" name="kelurahan">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            No. Tel/HP
+                        </td>
+                        <td>
+                            : <input type="text" id="telp" name="telp">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Kode Pos
+                        </td>
+                        <td>
+                            : <input type="text" id="pos" name="pos">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Agama
+                        </td>
+                        <td>
+                            : <input type="text" id="agama" name="agama">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Pendidikan Terakhir
+                        </td>
+                        <td>
+                            : <select name="pendidikan" id="pendidikan">
+                                <option value="belum">Tidak / Belum Sekolah</option>
+                                <option value="sd">SD / Sederajat </option>
+                                <option value="smp">SMP / Sederajat </option>
+                                <option value="sma">SMA / Sederajat </option>
+                                <option value="diplomaI">Diploma I </option>
+                                <option value="diplomaII">Diploma II </option>
+                                <option value="diplomaIII">Diploma III </option>
+                                <option value="diplomaIV/StrataI">diploma IV / Strata I</option>
+                                <option value="Strata II">Strata II </option>
+                                <option value="Strata III">Strata III </option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Pekerjaan
+                        </td>
+                        <td>
+                            : <input type="text" id="pekerjaan" name="pekerjaan">
+                        </td>
+                    </tr>
+                </table>
+                <h3>II. IDENTITAS PASIEN</h3>
+                <table>
+                    <tr>
+                        <td>Hubungan Dengan Pasien</td>
+                        <td>
+                            : <input type="text" id="hub" name="hub">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Nama Penanggung Jawab</td>
+                        <td>
+                            : <input type="text" id="namaPJ" name="namaPJ">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pendidikan Penanggung Jawab</td>
+                        <td>
+                            : <input type="text" id="pendidikanPJ" name="pendidikanPJ">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pekerjaan Penanggung Jawab</td>
+                        <td>
+                            : <input type="text" id="pekerjaanPJ" name="pekerjaanPJ">
+                        </td>
+                    </tr>
+                </table>
+                <div class="signature">
+                    <h5 id="signText1">Tanda Tangan</h5>
+                    <label for="avatar" id="signText2">(Upload tanda tangan)</label><br>
+                    <input type="file" id="ttd" name="ttd" accept="image/png, image/jpeg">
+                </div>
+                <input type="submit" value="Submit" onclick="validateForm()">
+            </form>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
