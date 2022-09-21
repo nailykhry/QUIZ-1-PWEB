@@ -1,20 +1,20 @@
 function validateForm()
 {
     // Validasi Nama
-    let name = document.forms["myForm"]["name"].value;
-    let birthplace = document.forms["myForm"]["birthplace"].value;
-    let birthdate = document.forms["myForm"]["birthdate"].value;
-    let provinsi = document.forms["myForm"]["provinsi"].value;
-    let kecamatan = document.forms["myForm"]["kecamatan"].value;
-    let kelurahan = document.forms["myForm"]["kelurahan"].value;
-    let telp = document.forms["myForm"]["telp"].value;
-    let pos = document.forms["myForm"]["pos"].value;
-    let agama = document.forms["myForm"]["agama"].value;
-    let pekerjaan = document.forms["myForm"]["pekerjaan"].value;
-    let hub = document.forms["myForm"]["hub"].value;
-    let namaPJ = document.forms["myForm"]["namaPJ"].value;
-    let pendidikanPJ = document.forms["myForm"]["pendidikanPJ"].value;
-    let pekerjaanPJ = document.forms["myForm"]["pekerjaanPJ"].value;
+    let name = document.getElementById("name").value;
+    let birthplace = document.getElementById("birthplace").value;
+    let birthdate = document.getElementById("birthdate").value;
+    let provinsi = document.getElementById("provinsi").value;
+    let kecamatan = document.getElementById("kecamatan").value;
+    let kelurahan = document.getElementById("kelurahan").value;
+    let telp = document.getElementById("telp").value;
+    let pos = document.getElementById("pos").value;
+    let agama = document.getElementById("agama").value;
+    let pekerjaan = document.getElementById("pekerjaan").value;
+    let hub = document.getElementById("hub").value;
+    let namaPJ = document.getElementById("namaPJ").value;
+    let pendidikanPJ = document.getElementById("pendidikanPJ").value;
+    let pekerjaanPJ = document.getElementById("pekerjaanPJ").value;
 
 
     var letters = /^[a-zA-Z\s]*$/;  
@@ -61,13 +61,11 @@ function validateForm()
     else if(!number.test(telp))
     {
         alert("Nomor Telepon hanya bisa berisi angka");
-        return false;
     }
 
     else if(!number.test(pos))
     {
         alert("Kode pos hanya bisa berisi angka");
-        return false;
     }
 
     else if(!letters.test(agama))
